@@ -13,6 +13,7 @@ class CallbackActivity: Activity() {
 
     if (scheme != null) {
       FlutterWebAuth2Plugin.callbacks.remove(scheme)?.success(url.toString())
+      FlutterWebAuth2Plugin.maybeCloseCustomTab()
     }
 
     finish()

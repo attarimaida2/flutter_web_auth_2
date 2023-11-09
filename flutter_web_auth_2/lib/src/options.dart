@@ -9,6 +9,9 @@ const defaultIntentFlags = 1 << 29 | 1 << 28;
 /// | FLAG_ACTIVITY_NO_HISTORY`.
 const ephemeralIntentFlags = defaultIntentFlags | 1 << 30;
 
+/// Empty intent flags for opening the custom tabs intent on Android.
+const noFlags = 0;
+
 /// Default HTML code that generates a nice callback page.
 const _defaultLandingPage = '''
 <!DOCTYPE html>

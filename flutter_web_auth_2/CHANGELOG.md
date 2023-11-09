@@ -1,3 +1,7 @@
+## 3.1.0
+
+- 🎉 Allow launching custom tab in the main task
+
 ## 3.0.3
 
 - 🌹 Fix Web implementation not being found properly (See [#82](https://github.com/ThexXTURBOXx/flutter_web_auth_2/issues/82))
