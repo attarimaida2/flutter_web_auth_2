@@ -85,10 +85,8 @@ class FlutterWebAuth2Plugin: MethodCallHandler, FlutterPlugin,
           callbacks[callbackUrlScheme] = resultCallback
 
           val intent = CustomTabsIntent.Builder().build()
-          val keepAliveIntent = Intent(activity, KeepAliveService::class.java)
 
           intent.intent.addFlags(options["intentFlags"] as Int)
-          intent.intent.putExtra("android.support.customtabs.extra.KEEP_ALIVE", keepAliveIntent)
 
           intent.launchUrl(activity, url)
         }
